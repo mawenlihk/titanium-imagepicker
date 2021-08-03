@@ -22,8 +22,6 @@ public class TiMatisseActivity extends Activity {
         
         Matisse.from(this)
             .choose(MimeType.ofImage())
-            .capture(true)
-            .captureStrategy(new CaptureStrategy(true, "io.lambus.app.provider"))
             .countable(true)
             .maxSelectable(maxImageSelection)
             .thumbnailScale(0.80f)
